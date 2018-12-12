@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.registrasi.CompleteRegistrasiFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scrollView2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout style="@style/LayoutFillParent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:padding="20dp">
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="Informasi Umum" />
+
+                <View style="@style/Line.Grey" />
+
+
+                <View style="@style/WhiteSpaceVertical" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No. KTP "
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="555421545415"
+                            android:textColor="@color/black_primary_text"
+                            android:id="@+id/tv_no_ktp"
+                            android:gravity="right"/>
+                    </LinearLayout>
+
+
+                    <View style="@style/Line.Grey" />
+                    <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Lengkap "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ucup Selamanya"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_nama_lengkap"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Ibu Kandung"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Icip Selamanya"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_nama_ibu"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat Lahir "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ghana"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_tempat_lahir"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1992-04-12"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_tanggal_lahir"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ucupcelamanya@ucup.com"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_email"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. Handphone "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="085694556969"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_phone"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Laki - laki"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_jenis_kelamin"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pendapatan "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1000.000"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_pendapatan"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pekerjaan "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seller IG Followers"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_pekerjaan"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="Informasi Alamat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Provinsi "
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papua"
+                        android:textColor="@color/black_primary_text"
+                        android:gravity="right"
+                        android:id="@+id/tv_provinsi_ktp"/>
+                </LinearLayout>
+
+                <View style="@style/Line.Grey" />
+                <View style="@style/WhiteSpaceVertical" />
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+</LinearLayout>
+

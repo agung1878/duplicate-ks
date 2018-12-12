@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.registrasi.RegisterSimpananFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scrollView2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout style="@style/LayoutFillParent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:padding="20dp">
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="Simpanan Koperasi" />
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_simpanan_koperasi"
+                    android:scrollbars="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

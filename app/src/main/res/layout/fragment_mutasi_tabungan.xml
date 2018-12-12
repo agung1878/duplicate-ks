@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatchParent"
+    android:background="@color/material_grey_200"
+    tools:context=".ui.fragments.InformasiTabunganFragment">
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/LayoutMatchParent"
+        android:orientation="vertical"
+        android:id="@+id/rv_mutasi_tabungan"
+        android:scrollbars="horizontal" />
+
+</FrameLayout>

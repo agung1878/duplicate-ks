@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/item_simpanan_koperasi">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_simpan_koperasi"
+        style="@style/ComponentLayout">
+        <LinearLayout style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView style="@style/Text.Headline"
+                android:textSize="15dp"
+                android:text="1. Simpanan Pokok YO"
+                android:id="@+id/tv_title"/>
+            <View style="@style/Line.Grey" />
+            <TextView style="@style/Text"
+                android:id="@+id/tv_desc"
+                android:text="Simpanan pokok menjadi anggota koperasi syariah 212. Yo"/>
+            <android.support.design.widget.TextInputLayout
+                style="@style/FloatingLabel"
+                app:errorTextAppearance="@style/EditTextError"
+                android:id="@+id/input_lbl_simpanan"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp">
+                <android.support.design.widget.TextInputEditText
+                    style="@style/EditText"
+                    android:textSize="13dp"
+                    android:inputType="number"
+                    android:id="@+id/input_txt_simpanan" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView style="@style/Text"
+                android:id="@+id/tv_nominal"
+                android:text="Rp. 212.000 Yo" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/WhiteSpaceVertical" />
+</LinearLayout>

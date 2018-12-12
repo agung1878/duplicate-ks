@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_menu_favorite"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/nav_informasi_tabungan"
+            android:icon="@drawable/ic_menu_informasi_tabungan"
+            android:title="Informasi Tabungan" />
+        <item
+            android:id="@+id/nav_mutasi_tabungan"
+            android:icon="@drawable/ic_menu_mutasi_tabungan"
+            android:title="Mutasi Tabungan" />
+        <item
+            android:id="@+id/nav_pembelian"
+            android:icon="@drawable/ic_menu_pembelian"
+            android:title="Pembelian" />
+        <item
+
+            android:id="@+id/nav_pembayaran"
+            android:icon="@drawable/ic_menu_pembayaran"
+            android:title="Pembayaran" />
+        <item
+            android:id="@+id/nav_transfer"
+            android:icon="@drawable/ic_menu_transfer"
+            android:title="Transfer" />
+        <item
+            android:id="@+id/nav_ganti_pin"
+            android:icon="@drawable/ic_menu_ganti_pin"
+            android:title="Ganti Pin" />
+
+        <item
+            android:id="@+id/nav_arsip_transaksi"
+            android:icon="@drawable/ic_menu_arsip_transaksi"
+            android:title="Arsip Transaksi" />
+
+        <item
+            android:id="@+id/nav_hubungi_kami"
+            android:icon="@drawable/ic_menu_hubungi_kami"
+            android:title="Hubungi Kami" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Profile" />
+
+    </group>
+
+</menu>

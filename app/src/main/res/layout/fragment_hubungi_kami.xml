@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultLayout"
+    tools:context=".ui.fragments.HubungiKamiFragment">
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <TextView
+        style="@style/Text"
+        android:text="Silahkan kirimkan keluhan,saran atau pertanyaan anda dengan menggunakan form yang telah  di sediakan(SMS/EMAIL). " />
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <RadioGroup
+        style="@style/Text"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text"
+            android:textColor="@color/black_primary_text"
+            android:text="Konfirmasi : " />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Center"
+            android:id="@+id/rb_sms_center"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/rb_email"/>
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FloatingLabel"
+        app:errorTextAppearance="@style/EditTextError"
+        android:id="@+id/input_lbl_center">
+        <AutoCompleteTextView
+            style="@style/Spinner"
+            android:hint="Center"
+            android:id="@+id/input_txt_center"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FloatingLabel"
+        app:errorTextAppearance="@style/EditTextError"
+        android:id="@+id/input_lbl_compose_message">
+        <android.support.design.widget.TextInputEditText
+            style="@style/EditText"
+            android:hint="Compose Message"
+            android:id="@+id/input_txt_compose_message"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <Button
+        style="@style/TealButton"
+        android:text="KIRIM"
+        android:id="@+id/btn_kirim_hubungi_kami"
+        android:layout_gravity="right"/>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <TextView
+        style="@style/Text"
+        android:textColor="@color/black_primary_text"
+        android:text="Atau hubungi callcenter di bawah ini :" />
+
+</LinearLayout>

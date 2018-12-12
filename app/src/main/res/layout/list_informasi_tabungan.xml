@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ComponentLayout"
+    android:orientation="vertical"
+    android:padding="@dimen/component_padding">
+
+    <TextView style="@style/Text.Label"
+        android:text="No. Rekening"/>
+
+    <TextView style="@style/Text.Title"
+        android:text="Text No. Rekening"
+        android:id="@+id/lbl_no_rekening" />
+
+    <TextView style="@style/Text.Label"
+        android:text="Keterangan"/>
+
+    <TextView style="@style/Text.Title"
+        android:text="Text Keterangan"
+        android:id="@+id/lbl_keterangan" />
+
+</LinearLayout>

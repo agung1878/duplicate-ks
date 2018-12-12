@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/DefaultLayout"
+        tools:context=".ui.fragments.TransferAntarKoperasiFragment">
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_from">
+            <AutoCompleteTextView
+                style="@style/Spinner"
+                android:hint="Dari Rekening"
+                android:id="@+id/input_txt_from" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_code">
+            <android.support.design.widget.TextInputEditText
+                style="@style/EditText"
+                android:hint="Kode"
+                android:id="@+id/input_txt_code" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_to">
+            <AutoCompleteTextView
+                style="@style/Spinner"
+                android:hint="Rekening Tujuan"
+                android:id="@+id/input_txt_to" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_nominal">
+            <android.support.design.widget.TextInputEditText
+                style="@style/EditText"
+                android:hint="Jumlah Nominal"
+                android:id="@+id/input_txt_nominal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_keterangan">
+            <android.support.design.widget.TextInputEditText
+                style="@style/EditText"
+                android:hint="Keterangan"
+                android:id="@+id/input_txt_keterangan" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/WhiteSpaceVertical" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/FloatingLabel"
+            app:errorTextAppearance="@style/EditTextError"
+            android:id="@+id/input_lbl_pass">
+            <android.support.design.widget.TextInputEditText
+                style="@style/EditText"
+                android:hint="Password"
+                android:id="@+id/input_txt_pass" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            style="@style/LayoutFillParent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:paddingBottom="16dp">
+            <Button style="@style/AmberButton"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Test Koneksi"
+                android:id="@+id/btn_test_koneksi"/>
+            <View style="@style/WhiteSpaceHorizontal" />
+            <Button style="@style/TealButton"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Kirim"
+                android:id="@+id/btn_kirim"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

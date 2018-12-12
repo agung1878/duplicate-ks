@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultLayout"
+    tools:context=".ui.fragments.PembelianFragment">
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_pembelian_pln_prepaid">
+        <LinearLayout style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView style="@style/Text.Headline"
+                android:text="PLN Prepaid"/>
+            <View style="@style/Line.Grey" />
+            <TextView
+                style="@style/Text"
+                android:text="Pembelian PLN Prepaid" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_pembelian_top_up_voucher">
+        <LinearLayout style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView style="@style/Text.Headline"
+                android:text="Top Up Voucher"/>
+            <View style="@style/Line.Grey" />
+            <TextView
+                style="@style/Text"
+                android:text="Pembelian Top Up Voucher Pulsa/Paket Data" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

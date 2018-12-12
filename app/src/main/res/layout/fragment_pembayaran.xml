@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/DefaultLayout"
+    tools:context=".ui.fragments.PembayaranFragment">
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_pln_postpaid">
+        <LinearLayout
+            style="@style/ComponentLayout"
+            android:orientation="vertical">
+        <TextView
+            style="@style/Text.Headline"
+            android:text="PLN Postpaid"/>
+        <View style="@style/Line.Grey" />
+        <TextView
+            style="@style/Text"
+            android:text="Pembayaran tagihan listrik PLN" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_pln_non_taglis">
+        <LinearLayout
+            style="@style/ComponentLayout"
+            android:orientation="vertical">
+        <TextView
+            style="@style/Text.Headline"
+            android:text="PLN Non Taglis" />
+        <View style="@style/Line.Grey"/>
+        <TextView
+            style="@style/Text"
+            android:text="Pembayaran PLN non Taglis" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_tagihan_telkom">
+        <LinearLayout
+            style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Text.Headline"
+                android:text="Tagihan Telkom" />
+            <View style="@style/Line.Grey"/>
+            <TextView
+                style="@style/Text"
+                android:text="Pembayaran Tagihan Telkom" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_tagihan_lain">
+        <LinearLayout
+            style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Text.Headline"
+                android:text="Tagihan Lain" />
+            <View style="@style/Line.Grey"/>
+            <TextView
+                style="@style/Text"
+                android:text="Pembayaran Tagihan lainnya" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View style="@style/WhiteSpaceVertical" />
+
+    <android.support.v7.widget.CardView
+        style="@style/ComponentLayout"
+        android:id="@+id/mn_bpjs">
+        <LinearLayout
+            style="@style/ComponentLayout"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Text.Headline"
+                android:text="BPJS" />
+            <View style="@style/Line.Grey"/>
+            <TextView
+                style="@style/Text"
+                android:text="Pembayaran BPJS" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

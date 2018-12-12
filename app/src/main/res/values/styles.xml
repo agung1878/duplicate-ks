@@ -1,0 +1,220 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LayoutMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutFillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="LayoutMatchParent.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ComponentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DefaultLayout" parent="LayoutMatchParent.Vertical">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:paddingLeft">@dimen/layout_padding</item>
+        <item name="android:paddingRight">@dimen/layout_padding</item>
+        <item name="android:background">@color/material_grey_200</item>
+    </style>
+
+    <style name="ScrollableLayout" parent="LayoutMatchParent">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:background">@color/material_grey_200</item>
+    </style>
+
+
+    <style name="Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line</item>
+    </style>
+
+    <style name="Line.White">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Line.Red">
+        <item name="android:background">@color/material_red_800</item>
+    </style>
+
+    <style name="Line.Grey">
+        <item name="android:background">@color/black_divider</item>
+    </style>
+
+    <style name="WhiteSpaceHorizontal">
+        <item name="android:layout_width">@dimen/layout_padding</item>
+        <item name="android:layout_height">@dimen/line</item>
+    </style>
+
+    <style name="WhiteSpaceVertical">
+        <item name="android:layout_width">@dimen/line</item>
+        <item name="android:layout_height">@dimen/layout_padding</item>
+    </style>
+
+    <style name="EditTextError" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/material_red_700</item>
+    </style>
+
+    <style name="FloatingLabelTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/material_grey_600</item>
+        <item name="colorControlActivated">@color/material_grey_700</item>
+    </style>
+
+    <style name="FloatingLabel">
+        <item name="android:theme">@style/FloatingLabelTheme</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="colorControlNormal">@color/material_grey_600</item>
+        <item name="colorControlActivated">@color/material_grey_700</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:theme">@style/EditTextTheme</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Spinner">
+        <item name="android:theme">@style/EditTextTheme</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_bg</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/full_width_edittext_padding</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+    </style>
+
+    <style name="AmberButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/material_amber_500</item>
+        <item name="colorButtonNormal">@color/material_amber_400</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="AmberButton">
+        <item name="android:theme">@style/AmberButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RedButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/material_red_900</item>
+        <item name="colorButtonNormal">@color/material_red_700</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="RedButton">
+        <item name="android:theme">@style/RedButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TealButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/material_teal_700</item>
+        <item name="colorButtonNormal">@color/material_teal_500</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="TealButton">
+        <item name="android:theme">@style/TealButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/component_padding</item>
+    </style>
+
+    <style name="Text.Date">
+        <item name="android:textColor">@color/switch_thumb_disabled_material_dark</item>
+        <item name="android:textSize">@dimen/abc_text_size_caption_material</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="Text.Headline">
+        <item name="android:textColor">@color/black_primary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_headline_material</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="Text.Title">
+        <item name="android:textColor">@color/black_primary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_title_material</item>
+        <item name="android:fontFamily">sans-serif-normal</item>
+    </style>
+
+    <style name="Text.Caption">
+        <item name="android:textSize">@dimen/abc_text_size_caption_material</item>
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Text.Label">
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text.ItemList">
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+        <item name="android:fontFamily">sans-serif-normal</item>
+    </style>
+
+    <style name="Text.Tag">
+        <item name="android:textColor">@color/white_primary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_caption_material</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+</resources>

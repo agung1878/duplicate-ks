@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.RegisterFragment">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/scrollView2">-->
+
+        <!--<LinearLayout style="@style/LayoutFillParent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="top">-->
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="Informasi Umum" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/input_lbl_phone"-->
+                    <!--style="@style/FloatingLabel"-->
+                    <!--app:errorTextAppearance="@style/EditTextError">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--android:id="@+id/input_txt_upload_ktp"-->
+                        <!--style="@style/EditText"-->
+                        <!--android:textSize="13dp"-->
+                        <!--android:hint="Upload KTP" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/btn_pick_image"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginEnd="12dp"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:src="@drawable/baseline_note_add_24" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:id="@+id/image_thumbnail"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--android:visibility="gone"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_no_ktp">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:hint="No KTP"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_no_ktp"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_nama_lengkap">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:hint="Nama Lengkap"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_nama_lengkap"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_agama">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:hint="Agama"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_agama"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_nama_ibu">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:hint="Nama Ibu Kandung"-->
+                    <!--android:id="@+id/input_txt_nama_ibu"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/input_lbl_tempat_lahir"-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError">-->
+
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--android:id="@+id/input_txt_tempat_lahir"-->
+                    <!--style="@style/EditText"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:hint="Tempat Lahir" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/input_lbl_tgl_lahir"-->
+                    <!--style="@style/FloatingLabel"-->
+                    <!--app:errorTextAppearance="@style/EditTextError">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--android:id="@+id/input_txt_tgl_lahir"-->
+                        <!--style="@style/EditText"-->
+                        <!--android:textSize="13dp"-->
+                        <!--android:hint="Tanggal Lahir" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/btn_pick_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginEnd="12dp"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:src="@drawable/ic_date_black_24dp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_email">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:hint="Email"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_email"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_no_hp">-->
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--style="@style/EditText"-->
+                    <!--android:hint="No Hp"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_no_hp"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<RadioGroup-->
+                <!--style="@style/Text"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--style="@style/Text"-->
+                    <!--android:textColor="@color/black_primary_text"-->
+                    <!--android:text="Jenis Kelamin : " />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="laki-laki"-->
+                    <!--android:id="@+id/rb_laki"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Perempuan"-->
+                    <!--android:id="@+id/rb_perempuan"/>-->
+            <!--</RadioGroup>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_pendapatan">-->
+                <!--<AutoCompleteTextView-->
+                    <!--style="@style/Spinner"-->
+                    <!--android:hint="Pendapatan"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:id="@+id/input_txt_pendapatan"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_pekerjaan">-->
+                <!--<AutoCompleteTextView-->
+                    <!--style="@style/Spinner"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:hint="Pekerjaan"-->
+                    <!--android:id="@+id/input_txt_pekerjaan"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="Alamat" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--style="@style/ComponentLayout">-->
+                <!--<LinearLayout style="@style/ComponentLayout"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView style="@style/Text.Headline"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:text="Alamat KTP" />-->
+                    <!--<View style="@style/Line.Grey" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_provinsi">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Provinsi"-->
+                            <!--android:id="@+id/input_txt_provinsi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kota">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Kota"-->
+                            <!--android:id="@+id/input_txt_kota"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kecamatan">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--android:textSize="13dp"-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:hint="Kecamatan"-->
+                            <!--android:id="@+id/input_txt_kecamatan"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kelurahan">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--android:textSize="13dp"-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:hint="Kelurahan"-->
+                            <!--android:id="@+id/input_txt_kelurahan"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_alamat">-->
+                        <!--<android.support.design.widget.TextInputEditText-->
+                            <!--style="@style/EditText"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Alamat"-->
+                            <!--android:id="@+id/input_txt_alamat"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--style="@style/ComponentLayout"-->
+                <!--android:id="@+id/cv_korespondensi"-->
+                <!--android:visibility="visible">-->
+                <!--<LinearLayout style="@style/ComponentLayout"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView style="@style/Text.Headline"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:text="Alamat Korespondensi"/>-->
+                    <!--<View style="@style/Line.Grey" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_provinsi_korespondensi">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Provinsi"-->
+                            <!--android:id="@+id/input_txt_provinsi_korespondensi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kota_korespondensi">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Kota"-->
+                            <!--android:id="@+id/input_txt_kota_korespondensi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kecamatan_korespondensi">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Kecamatan"-->
+                            <!--android:id="@+id/input_txt_kecamatan_korespondensi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_kelurahan_korespondensi">-->
+                        <!--<AutoCompleteTextView-->
+                            <!--style="@style/Spinner"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Kelurahan"-->
+                            <!--android:id="@+id/input_txt_kelurahan_korespondensi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <!--<View style="@style/WhiteSpaceVertical" />-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--style="@style/FloatingLabel"-->
+                        <!--app:errorTextAppearance="@style/EditTextError"-->
+                        <!--android:id="@+id/input_lbl_alamat_korespondensi">-->
+                        <!--<android.support.design.widget.TextInputEditText-->
+                            <!--style="@style/EditText"-->
+                            <!--android:textSize="13dp"-->
+                            <!--android:hint="Alamat"-->
+                            <!--android:id="@+id/input_txt_alamat_korespondensi"/>-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<CheckBox-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Alamat korespondensi sama dengan alamat KTP"-->
+                <!--android:id="@+id/cb_alamat"/>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="Komunitas" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--style="@style/FloatingLabel"-->
+                <!--app:errorTextAppearance="@style/EditTextError"-->
+                <!--android:id="@+id/input_lbl_komunitas">-->
+                <!--<AutoCompleteTextView-->
+                    <!--style="@style/Spinner"-->
+                    <!--android:textSize="13dp"-->
+                    <!--android:hint="Pilih Komunitas"-->
+                    <!--android:id="@+id/input_txt_komunitas"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="Simpanan Koperasi" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/rv_simpanan_koperasi"-->
+                <!--android:scrollbars="horizontal">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="TABUNGAN INVESTASI(SIMPANAN SUKARELA)" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/rv_tabungan_investasi"-->
+                <!--android:scrollbars="horizontal">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="WAKAF"-->
+                <!--android:id="@+id/tv_judul_wakaf"-->
+                <!--android:visibility="visible"/>-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/rv_wakaf"-->
+                <!--android:scrollbars="horizontal">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<TextView style="@style/Text"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/black_primary_text"-->
+                <!--android:text="BIAYA-BIAYA" />-->
+
+            <!--<View style="@style/Line.Grey" />-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--style="@style/ComponentLayout">-->
+                <!--<LinearLayout style="@style/ComponentLayout"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView style="@style/Text.Headline"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:text="1. Biaya registrasi awal" />-->
+                    <!--<View style="@style/Line.Grey" />-->
+                    <!--<TextView style="@style/Text"-->
+                        <!--android:text="Biaya administrasi yang di kenakan hanya satu kali saat anggota pertama kali mendaftar"/>-->
+                    <!--<TextView style="@style/Text"-->
+                        <!--android:text="Rp. 16.000"/>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--style="@style/ComponentLayout">-->
+                <!--<LinearLayout style="@style/ComponentLayout"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<TextView style="@style/Text.Headline"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:text="TOTAL" />-->
+                    <!--<View style="@style/Line.Grey" />-->
+                    <!--<TextView style="@style/Text"-->
+                        <!--android:text="Rp. 400.000"/>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Registrasi"-->
+                <!--android:id="@+id/btnSubmitRegister"-->
+                <!--android:backgroundTint="@color/colorPrimary"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<View style="@style/WhiteSpaceVertical" />-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

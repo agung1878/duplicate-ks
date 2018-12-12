@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.registrasi.RegisterTabunganInvesFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scrollView2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout style="@style/LayoutFillParent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:padding="20dp">
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="TABUNGAN INVESTASI(SIMPANAN SUKARELA)" />
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_tabungan_investasi"
+                    android:scrollbars="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="WAKAF"
+                    android:id="@+id/tv_judul_wakaf"
+                    android:visibility="visible"/>
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_wakaf"
+                    android:scrollbars="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="BIAYA-BIAYA" />
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.v7.widget.CardView
+                    style="@style/ComponentLayout">
+                    <LinearLayout style="@style/ComponentLayout"
+                        android:orientation="vertical">
+                        <TextView style="@style/Text.Headline"
+                            android:textSize="15dp"
+                            android:text="1. Biaya registrasi awal" />
+                        <View style="@style/Line.Grey" />
+                        <TextView style="@style/Text"
+                            android:text="Biaya administrasi yang di kenakan hanya satu kali saat anggota pertama kali mendaftar"/>
+                        <TextView style="@style/Text"
+                            android:text="Rp. 16.000"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View style="@style/WhiteSpaceVertical" />
+
+                <android.support.v7.widget.CardView
+                    style="@style/ComponentLayout">
+                    <LinearLayout style="@style/ComponentLayout"
+                        android:orientation="vertical">
+                        <TextView style="@style/Text.Headline"
+                            android:textSize="15dp"
+                            android:text="TOTAL" />
+                        <View style="@style/Line.Grey" />
+                        <TextView style="@style/Text"
+                            android:text="Rp. 400.000"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View style="@style/WhiteSpaceVertical" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrasi"
+                    android:id="@+id/btnSubmitRegister"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+

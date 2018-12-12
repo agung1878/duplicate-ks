@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    style="@style/DefaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.registrasi.RegisterAlamatFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scrollView2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout style="@style/LayoutFillParent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:padding="20dp">
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="Alamat" />
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.v7.widget.CardView
+                    style="@style/ComponentLayout">
+                    <LinearLayout style="@style/ComponentLayout"
+                        android:orientation="vertical">
+                        <TextView style="@style/Text.Headline"
+                            android:textSize="15dp"
+                            android:text="Alamat KTP" />
+                        <View style="@style/Line.Grey" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_provinsi">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Provinsi"
+                                android:id="@+id/input_txt_provinsi"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kota">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Kota"
+                                android:id="@+id/input_txt_kota"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kecamatan">
+                            <AutoCompleteTextView
+                                android:textSize="13dp"
+                                style="@style/Spinner"
+                                android:hint="Kecamatan"
+                                android:id="@+id/input_txt_kecamatan"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kelurahan">
+                            <AutoCompleteTextView
+                                android:textSize="13dp"
+                                style="@style/Spinner"
+                                android:hint="Kelurahan"
+                                android:id="@+id/input_txt_kelurahan"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_alamat">
+                            <android.support.design.widget.TextInputEditText
+                                style="@style/EditText"
+                                android:textSize="13dp"
+                                android:hint="Alamat"
+                                android:id="@+id/input_txt_alamat"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View style="@style/WhiteSpaceVertical" />
+
+                <android.support.v7.widget.CardView
+                    style="@style/ComponentLayout"
+                    android:id="@+id/cv_korespondensi"
+                    android:visibility="visible">
+                    <LinearLayout style="@style/ComponentLayout"
+                        android:orientation="vertical">
+                        <TextView style="@style/Text.Headline"
+                            android:textSize="15dp"
+                            android:text="Alamat Korespondensi"/>
+                        <View style="@style/Line.Grey" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_provinsi_korespondensi">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Provinsi"
+                                android:id="@+id/input_txt_provinsi_korespondensi"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kota_korespondensi">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Kota"
+                                android:id="@+id/input_txt_kota_korespondensi"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kecamatan_korespondensi">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Kecamatan"
+                                android:id="@+id/input_txt_kecamatan_korespondensi"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_kelurahan_korespondensi">
+                            <AutoCompleteTextView
+                                style="@style/Spinner"
+                                android:textSize="13dp"
+                                android:hint="Kelurahan"
+                                android:id="@+id/input_txt_kelurahan_korespondensi"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <View style="@style/WhiteSpaceVertical" />
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/FloatingLabel"
+                            app:errorTextAppearance="@style/EditTextError"
+                            android:id="@+id/input_lbl_alamat_korespondensi">
+                            <android.support.design.widget.TextInputEditText
+                                style="@style/EditText"
+                                android:textSize="13dp"
+                                android:hint="Alamat"
+                                android:id="@+id/input_txt_alamat_korespondensi"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat korespondensi sama dengan alamat KTP"
+                    android:id="@+id/cb_alamat"/>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+
+                <TextView style="@style/Text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_primary_text"
+                    android:text="Komunitas" />
+
+                <View style="@style/Line.Grey" />
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/FloatingLabel"
+                    app:errorTextAppearance="@style/EditTextError"
+                    android:id="@+id/input_lbl_komunitas">
+                    <AutoCompleteTextView
+                        style="@style/Spinner"
+                        android:textSize="13dp"
+                        android:hint="Pilih Komunitas"
+                        android:id="@+id/input_txt_komunitas"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <View style="@style/WhiteSpaceVertical" />
+                <View style="@style/WhiteSpaceVertical" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
